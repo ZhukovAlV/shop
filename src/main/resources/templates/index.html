@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 
-<p>Привет мир!</p>
+<!-- Тег span выделяет блок текста в единое целое -->
+<span style="color: green;">Hello</span>
+<span style="color: red;">HTML</span>
+
+<!-- Тег img подключает изображение -->
+<img th:src="@{img/2lesson.png}" width="259" height="194" border="3" >
+
+<!-- Тег input с атрибутом type="text" подключает текствое поле -->
+<input type="text" value="0123456789" maxlength="10" />
+
+<!-- Тег input с атрибутом type="password" подключает поле для ввода пароля-->
+<input type="password" value="" maxlength="10" />
+
+<!-- Тег input с атрибутом type="button" подключает кнопку -->
+<input type="button" value="Кнопка" />
+
+<!-- Тег input с атрибутом type="checkbox" подключает кнопку поле для "галочки" -->
+<input type="checkbox" />
+
+<!-- Тег div подключает блок -->
+<div style="background-color: red; width: 200px; height: 100px;">Блок</div>
+
+<!-- Тег a подключает ссылку -->
+<a href="http://yandex.ru" target="_blank">Yandex</a>
+<a href="http://google.ru" target="_self">Google</a>
+
+<!-- Тег table подключает таблицу -->
+<table border="1">
+    <!-- Тег tr подключает строку таблицы -->
+    <tr>
+        <!-- Тег td подключает ячейку строки таблицы -->
+        <td>1</td>
+        <td>2</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+
+</table>
 
 </body>
 </html>
