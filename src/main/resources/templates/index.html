@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style type="text/css">
+        h1
+        {
+            color: red;  /* Красный цвет */
+            font-family: Georgia, serif;  /* Выбранный шрифт */
+            font-size: 14px;  /* Размер шрифта*/
+        }
+        span
+        {
+            color: green;
+        }
+        table
+        {
+            width: 300px; /* Ширина блока */
+            height: 150px; /* Высота блока */
+            background-color: #3366CC;
+        }
+        #mystyle
+        {
+            color:#090;
+        }
+        .myclass
+        {
+            color:#F00;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Тег span выделяет блок текста в единое целое -->
-<span style="color: green;">Hello</span>
-<span style="color: red;">HTML</span>
+<span>Hello</span>
+<span>HTML</span>
 
 <!-- Тег img подключает изображение -->
 <img th:src="@{img/2lesson.png}" width="259" height="194" border="3" >
@@ -52,6 +78,13 @@
     </tr>
 
 </table>
+
+<h1>Это мой текст</h1>
+
+<p id="mystyle">Пример селектора по идентификатору</p>
+<p>Пример селектора по идентификатору дефолтный</p>
+
+<p class="myclass">Пример селектора по классу</p>
 
 </body>
 </html>
