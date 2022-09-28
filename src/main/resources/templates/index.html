@@ -1,46 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style type="text/css">
-        h1
-        {
-            color: red;  /* Красный цвет */
-            font-family: Georgia, serif;  /* Выбранный шрифт */
-            font-size: 14px;  /* Размер шрифта*/
-        }
-        span
-        {
-            color: green;
-        }
-        table
-        {
-            width: 300px; /* Ширина блока */
-            height: 150px; /* Высота блока */
-            background-color: #3366CC;
-        }
-        #mystyle
-        {
-            color:#090;
-        }
-        .myclass
-        {
-            color:#F00;
-        }
-    </style>
 </head>
 <body>
 
-<!-- Тег span выделяет блок текста в единое целое -->
-<span>Hello</span>
-<span>HTML</span>
-
-<!-- Тег img подключает изображение -->
-<img th:src="@{img/2lesson.png}" width="259" height="194" border="3" >
+<p align="center">Привет мир</p>
+<p>Да, привет</p>
 
 <!-- Тег input с атрибутом type="text" подключает текствое поле -->
-<input type="text" value="0123456789" maxlength="10" />
+<input type="text" value="Введите логин" maxlength="10" />
 
 <!-- Тег input с атрибутом type="password" подключает поле для ввода пароля-->
 <input type="password" value="" maxlength="10" />
@@ -50,9 +20,6 @@
 
 <!-- Тег input с атрибутом type="checkbox" подключает кнопку поле для "галочки" -->
 <input type="checkbox" />
-
-<!-- Тег div подключает блок -->
-<div style="background-color: red; width: 200px; height: 100px;">Блок</div>
 
 <!-- Тег a подключает ссылку -->
 <a href="http://yandex.ru" target="_blank">Yandex</a>
@@ -79,12 +46,8 @@
 
 </table>
 
-<h1>Это мой текст</h1>
-
-<p id="mystyle">Пример селектора по идентификатору</p>
-<p>Пример селектора по идентификатору дефолтный</p>
-
-<p class="myclass">Пример селектора по классу</p>
+<!-- Тег img подключает изображение -->
+<img th:src="@{img/2lesson.png}" width="259" height="194" border="3" >
 
 </body>
 </html>
