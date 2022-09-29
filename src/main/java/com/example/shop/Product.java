@@ -3,7 +3,7 @@ package com.example.shop;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "products")
+@Table(name = "product")
 public class Product {
 
     @Id
@@ -11,8 +11,11 @@ public class Product {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "item")
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "amount")
+    private String amount;
 
     public Long getId() {
         return id;
@@ -28,5 +31,13 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 }
