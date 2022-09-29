@@ -18,10 +18,8 @@ public class MainController {
     @GetMapping("/")
     public String mainPage(Model model) {
 
-        rep.findAll().forEach(elem -> System.out.println(elem.getName()));
-        //model.addAttribute("strHello", );
-
-        System.out.println();
+        Iterable<Product> listProduct = rep.findAll();
+        model.addAttribute("products", listProduct);
 
         return "index";
     }

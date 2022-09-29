@@ -6,7 +6,15 @@
 </head>
 <body>
 
-<p>Привет мир!</p>
+<h2>Список товаров на складе:</h2>
+
+<table width="200px" border="1">
+    <tr th:each="product : ${products}">
+        <td th:text="${product.id}" />
+        <td th:text="${product.name}" />
+        <td th:text="${product.amount}" />
+    </tr>
+</table>
 
 </body>
 </html>
