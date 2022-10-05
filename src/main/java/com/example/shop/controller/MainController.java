@@ -22,13 +22,13 @@ public class MainController {
 
     @GetMapping("/")
     public String mainPage(Model model) {
-        Product product1 = new Product();
-        product1.setName("Мёд");
+     //   Product product1 = new Product();
+     //   product1.setName("Мёд");
 
 /*        List<Product> listProducts = new ArrayList<>();
         listProducts.add(product1);*/
 
-        productRepo.save(product1);
+    //    productRepo.save(product1);
 
         model.addAttribute("products", productRepo.findAll());
 

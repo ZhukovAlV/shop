@@ -1,7 +1,5 @@
 package com.example.shop.entity;
 
-import com.sun.istack.NotNull;
-
 import javax.persistence.*;
 
 @Entity
@@ -13,9 +11,11 @@ public class Product {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @NotNull
-    @Column(nullable = false)
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "amount")
+    private String amount;
 
     public Long getId() {
         return id;
@@ -31,5 +31,13 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 }
