@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        h1 {
+            font-family: Georgia, serif;
+            color: red;
+        }
+        #myText {
+            color: yellow;
+        }
+        span {
+            color: #0000ff;
+        }
+        .redText {
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
-<p align="center">Привет мир</p>
-<p>Да, привет</p>
+<h1>Привет мир</h1>
+<p id="myText">Да, привет</p>
 
+<p style="color: #0000ff;">Вася - голубой берет</p>
+
+<p class="redText">Вася</p>
+<p class="redText">Леша</p>
+<p class="redText">Петя</p>
+
+<span>Это кусочек текста</span>
 <!-- Тег input с атрибутом type="text" подключает текствое поле -->
 <input type="text" value="Введите логин" maxlength="10" />
 
