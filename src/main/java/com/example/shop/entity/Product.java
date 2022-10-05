@@ -15,7 +15,7 @@ public class Product {
     private String name;
 
     @Column(name = "amount")
-    private String amount;
+    private int amount;
 
     public Long getId() {
         return id;
@@ -33,11 +33,11 @@ public class Product {
         this.name = name;
     }
 
-    public String getAmount() {
+    public int getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 }
