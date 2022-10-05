@@ -103,9 +103,9 @@
                   </thead>
                   <tbody>
                   <tr th:each="product : ${products}">
-                     <th scope="row">1</th>
-                     <td th:text="${product.id}">...</td>
-                     <td th:text="${product.name}">...</td>
+                     <td th:text="${product.id}"></td>
+                     <td th:text="${product.name}"></td>
+                     <td th:text="${product.amount}"></td>
                   </tr>
                   </tbody>
                </table>

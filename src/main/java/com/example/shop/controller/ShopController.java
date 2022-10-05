@@ -20,14 +20,6 @@ public class ShopController {
     @GetMapping("/shop.html")
     public String shopPage(Model model) {
         model.addAttribute("products", productRepo.findAll());
-
-/*        Product product1 = new Product();
-        product1.setId(1L);
-        product1.setName("Propolis");
-        product1.setAmount("12");
-
-        productRepo.save(product1);*/
-
         return "shop";
     }
 }
