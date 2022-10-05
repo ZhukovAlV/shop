@@ -13,13 +13,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- bootstrap css -->
-    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
     <!-- style css -->
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{css/style.css}">
     <!-- Responsive-->
-    <link rel="stylesheet" th:href="@{/css/responsive.css}">
+    <link rel="stylesheet" th:href="@{css/responsive.css}">
     <!-- fevicon -->
-    <link rel="icon" th:href="@{/images/fevicon.png}" type="image/gif" />
+    <link rel="icon" th:href="@{images/fevicon.png}" type="image/gif" />
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <!--[if lt IE 9]>
@@ -30,14 +30,14 @@
 <body class="main-layout">
 <!-- loader  -->
 <div class="loader_bg">
-    <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+    <div class="loader"><img th:src="@{images/loading.gif}" alt="#"/></div>
 </div>
 <!-- end loader -->
 <!-- header -->
 <header>
     <div class="menu_sitbar di_mr01">
         <div class="logo">
-            <a th:href="@{/index.html}">      <a th:href="@{/index.html}"><img src="images/logo.png" alt="#"/></a>
+            <a th:href="@{index.html}"><img th:src="@{images/logo.png}" alt="#"/></a>
         </div>
         <nav class="navigation navbar navbar-expand-md navbar-dark ">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,19 +46,19 @@
             <div class="collapse navbar-collapse" id="navbarsExample05">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" th:href="@{/index.html}">Home</a>
+                        <a class="nav-link" th:href="@{index.html}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" th:href="@{/about.html}">About</a>
+                        <a class="nav-link" th:href="@{about.html}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" th:href="@{/shop.html}">shop</a>
+                        <a class="nav-link" th:href="@{shop.html}">shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" th:href="@{/quality.html}">quality</a>
+                        <a class="nav-link" th:href="@{quality.html}">quality</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" th:href="@{/contact.html}">Contact Us</a>
+                        <a class="nav-link" th:href="@{contact.html}">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -72,7 +72,7 @@
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
-                                    <a th:href="@{/index.html}"><img src="images/logo.png" alt="#"/></a>
+                                    <a th:href="@{index.html}"><img th:src="@{images/logo.png}" alt="#"/></a>
                                 </div>
                             </div>
                         </div>
@@ -85,19 +85,19 @@
                             <div class="collapse navbar-collapse" id="navbarsExample04">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" th:href="@{/index.html}">Home</a>
+                                        <a class="nav-link" th:href="@{index.html}">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" th:href="@{/about.html}">About</a>
+                                        <a class="nav-link" th:href="@{about.html}">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" th:href="@{/shop.html}">shop</a>
+                                        <a class="nav-link" th:href="@{shop.html}">shop</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" th:href="@{/quality.html}">quality</a>
+                                        <a class="nav-link" th:href="@{quality.html}">quality</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" th:href="@{/contact.html}">Contact Us</a>
+                                        <a class="nav-link" th:href="@{contact.html}">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -145,12 +145,12 @@
                                                             Pure Hony Here
                                                         </h3>
                                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                                                        <a class="read_more" th:href="@{/contact.html}">Contact  </a>
+                                                        <a class="read_more" th:href="@{contact.html}">Contact  </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5">
                                                     <div class="banner_img">
-                                                        <figure><img class="img_responsive" src="images/banner_img.png"></figure>
+                                                        <figure><img class="img_responsive" th:src="@{images/banner_img.png}"></figure>
                                                     </div>
                                                 </div>
                                             </div>
@@ -167,12 +167,12 @@
                                                             Pure Hony Here
                                                         </h3>
                                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                                                        <a class="read_more" th:href="@{/contact.html}">Contact  </a>
+                                                        <a class="read_more" th:href="@{contact.html}">Contact  </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5">
                                                     <div class="banner_img">
-                                                        <figure><img class="img_responsive" src="images/banner_img.png"></figure>
+                                                        <figure><img class="img_responsive" th:src="@{images/banner_img.png}"></figure>
                                                     </div>
                                                 </div>
                                             </div>
@@ -189,12 +189,12 @@
                                                             Pure Hony Here
                                                         </h3>
                                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
-                                                        <a class="read_more" th:href="@{/contact.html}">Contact  </a>
+                                                        <a class="read_more" th:href="@{contact.html}">Contact  </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5">
                                                     <div class="banner_img">
-                                                        <figure><img class="img_responsive" src="images/banner_img.png"></figure>
+                                                        <figure><img class="img_responsive" th:src="@{images/banner_img.png}"></figure>
                                                     </div>
                                                 </div>
                                             </div>
@@ -228,12 +228,12 @@
                     <h2>About Our Honey</h2>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     </p>
-                    <a class="read_more" th:href="@{/about.html}">Read More</a>
+                    <a class="read_more" th:href="@{about.html}">Read More</a>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="about_img text_align_center">
-                    <figure><img class="img_responsive" src="images/about.png" alt="#"/></figure>
+                    <figure><img class="img_responsive" th:src="@{images/about.png}" alt="#"/></figure>
                 </div>
             </div>
         </div>
@@ -255,42 +255,42 @@
         <div class="row">
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality1.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality1.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality2.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality2.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality3.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality3.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality4.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality4.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality5.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality5.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality6.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality6.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality7.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality7.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                 <div class="quality-box ">
-                    <figure><img src="images/quality8.png" alt="#"/></figure>
+                    <figure><img th:src="@{images/quality8.png}" alt="#"/></figure>
                 </div>
             </div>
             <div class="col-sm-12">
@@ -339,7 +339,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <figure><img class="img_responsive" src="images/honet_img.png" alt="#"/></figure>
+                <figure><img class="img_responsive" th:src="@{images/honet_img.png}" alt="#"/></figure>
             </div>
         </div>
     </div>
@@ -378,11 +378,11 @@
                     <div class="infoma">
                         <h3>Links</h3>
                         <ul class="fullink">
-                            <li><a th:href="@{/index.html}">Home</a></li>
-                            <li><a th:href="@{/about.html}">About</a></li>
-                            <li><a th:href="@{/shop.html}">Shop</a></li>
-                            <li><a th:href="@{/quality.html}">Quality</a></li>
-                            <li><a th:href="@{/contact.html}">Contact</a></li>
+                            <li><a th:href="@{index.html}">Home</a></li>
+                            <li><a th:href="@{about.html}">About</a></li>
+                            <li><a th:href="@{shop.html}">Shop</a></li>
+                            <li><a th:href="@{quality.html}">Quality</a></li>
+                            <li><a th:href="@{contact.html}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -419,10 +419,10 @@
 </footer>
 <!-- end footer -->
 <!-- Javascript files-->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery-3.0.0.min.js"></script>
+<script th:src="@{js/jquery.min.js}"></script>
+<script th:src="@{js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{js/jquery-3.0.0.min.js}"></script>
 <!-- sidebar -->
-<script src="js/custom.js"></script>
+<script th:src="@{js/custom.js}"></script>
 </body>
 </html>
