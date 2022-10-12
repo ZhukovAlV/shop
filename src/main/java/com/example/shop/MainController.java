@@ -15,7 +15,12 @@ public class MainController {
         this.repo = repo;
     }
 
-    @GetMapping("/product")
+    @GetMapping({"/", "/index.html"})
+    public String getMainPage() {
+        return "index";
+    }
+
+/*    @GetMapping("/product")
     public String mainPage(Model model) {
 
         var result = repo.findAll();
@@ -24,5 +29,16 @@ public class MainController {
 
 
         return "product";
+    }*/
+
+    @GetMapping("/shop.html")
+    public String getProductPage(Model model) {
+        model.addAttribute("products", repo.findAll());
+        return "shop";
+    }
+
+    @GetMapping("/contact.html")
+    public String getContactPage() {
+        return "contact";
     }
 }
